@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="EYL — атмосферная игра о выживании, выборе и цене надежды."
+    >
+
+    <title>EYL — PROJECT</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body>
+
+<!-- =====================================================
+     GLOBAL ATMOSPHERE
+===================================================== -->
+
+<div class="noise"></div>
+<div class="scanlines"></div>
+<div class="cursor-glow"></div>
+
+
+<!-- =====================================================
+     LOADER
+===================================================== -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-inner">
+
+        <div class="loader-mark">
+            EYL
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+        <div class="loader-text">
+            ИНИЦИАЛИЗАЦИЯ СИСТЕМЫ
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-inner">
+
+        <a
+            href="#top"
+            class="nav-logo"
+        >
+            <span class="nav-logo-main">
+                EYL
+            </span>
+
+            <span class="nav-logo-sub">
+                PROJECT
+            </span>
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="#world">
+                Мир
+            </a>
+
+            <a href="#survival">
+                Выживание
+            </a>
+
+            <a href="#night">
+                Ночь
+            </a>
+
+            <a href="#philosophy">
+                Идея
+            </a>
+
+            <a href="#developers">
+                Разработка
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE -->
+
+    <nav
+        class="mobile-nav"
+        id="mobileNav"
+        aria-hidden="true"
+    >
+
+        <a href="#world">
+            Мир
+        </a>
+
+        <a href="#survival">
+            Выживание
+        </a>
+
+        <a href="#night">
+            Ночь
+        </a>
+
+        <a href="#philosophy">
+            Идея
+        </a>
+
+        <a href="#development">
+            Статус
+        </a>
+
+        <a href="#developers">
+            Разработчики
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main id="top">
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero">
+
+    <div
+        class="hero-background-image"
+        style="
+            background-image:
+            url('images/hero.jpg');
+            background-size: cover;
+            background-position: center;
+        "
+    ></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-orb"></div>
+
+
+    <div class="hero-content reveal">
+
+        <div class="hero-eyebrow">
+            SURVIVAL HORROR / PROJECT EYL
+        </div>
+
+
+        <h1 class="hero-title">
+            EYL
+        </h1>
+
+
+        <div class="hero-line"></div>
+
+
+        <p class="hero-description">
+            Мир, в котором надежда больше не гарантирует
+            спасение. Выживание становится не целью,
+            а ежедневным выбором.
+        </p>
+
+
+        <div class="hero-actions">
+
+            <button
+                class="enter-button"
+                id="enterButton"
+            >
+
+                <span>
+                    ВОЙТИ В МИР
+                </span>
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+            <a
+                href="#world"
+                class="hero-scroll"
+            >
+
+                <span class="hero-scroll-line"></span>
+
+                <span>
+                    ИССЛЕДОВАТЬ
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="hero-status">
+
+            <span class="status-dot"></span>
+
+            <span>
+                СИГНАЛ СТАБИЛЕН
+            </span>
+
+        </div>
+
+
+        <div class="hero-version">
+            EYL / DEVELOPMENT BUILD
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="intro section-dark">
+
+    <div class="section-container">
+
+        <div class="intro-number">
+            01
+        </div>
+
+
+        <div class="intro-content reveal">
+
+            <div class="section-kicker">
+                О ПРОЕКТЕ
+            </div>
+
+
+            <h2>
+                Иногда выжить —
+                <span>
+                    недостаточно.
+                </span>
+            </h2>
+
+
+            <p>
+                EYL — это история о мире после катастрофы,
+                где привычные правила больше не работают.
+            </p>
+
+
+            <p>
+                Здесь нет простого ответа на вопрос,
+                что правильно. Каждый шаг имеет цену,
+                а каждое решение оставляет след.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WORLD
+===================================================== -->
+
+<section
+    class="world cinematic-section"
+    id="world"
+>
+
+    <div
+        class="world-background"
+        style="
+            background-image:
+            linear-gradient(
+                90deg,
+                rgba(5,5,5,.92),
+                rgba(5,5,5,.42),
+                rgba(5,5,5,.86)
+            ),
+            url('images/world.jpg');
+            background-size: cover;
+            background-position: center;
+        "
+    ></div>
+
+
+    <div class="section-container">
+
+        <div class="section-header reveal">
+
+            <div class="section-index">
+                02 / МИР
+            </div>
+
+
+            <h2>
+                МИР
+                <span>
+                    ИСЧЕЗАЕТ.
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="world-content">
+
+            <div class="world-large-text reveal">
+
+                То, что
+                <br>
+                осталось,
+                <br>
+                уже не прежнее.
+
+            </div>
+
+
+            <div class="world-description reveal">
+
+                <p>
+                    Катастрофа изменила не только людей.
+                    Она изменила само ощущение мира.
+                </p>
+
+                <p>
+                    Заброшенные дороги, разрушенные здания,
+                    пустые пространства и следы тех,
+                    кто был здесь раньше.
+                </p>
+
+                <p>
+                    Но самое страшное — неизвестно,
+                    что именно ждёт впереди.
+                </p>
+
+
+                <div class="world-line"></div>
+
+
+                <div class="world-caption">
+                    НЕ ВСЁ, ЧТО МОЛЧИТ, МЕРТВО
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="world-bottom">
+
+            <span>
+                СИСТЕМА / ОКРУЖЕНИЕ
+            </span>
+
+            <span>
+                SIGNAL 02
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SURVIVAL
+===================================================== -->
+
+<section
+    class="survival section-dark"
+    id="survival"
+>
+
+    <div class="section-container">
+
+        <div class="section-header reveal">
+
+            <div class="section-index">
+                03 / ВЫЖИВАНИЕ
+            </div>
+
+
+            <h2>
+                ЗДЕСЬ НЕЛЬЗЯ
+                <span>
+                    ИГРАТЬ В ГЕРОЯ.
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="survival-grid">
+
+
+            <article class="story-card reveal">
+
+                <div class="story-card-number">
+                    01
+                </div>
+
+                <div class="story-card-arrow">
+                    ↗
+                </div>
+
+
+                <div class="story-card-content">
+
+                    <h3>
+                        РЕСУРСЫ
+                    </h3>
+
+                    <p>
+                        Еда, вода, медикаменты и время —
+                        всё имеет значение.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="story-card reveal">
+
+                <div class="story-card-number">
+                    02
+                </div>
+
+                <div class="story-card-arrow">
+                    ↗
+                </div>
+
+
+                <div class="story-card-content">
+
+                    <h3>
+                        РИСК
+                    </h3>
+
+                    <p>
+                        Иногда самый безопасный путь
+                        оказывается самым дорогим.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="story-card reveal">
+
+                <div class="story-card-number">
+                    03
+                </div>
+
+                <div class="story-card-arrow">
+                    ↗
+                </div>
+
+
+                <div class="story-card-content">
+
+                    <h3>
+                        ТИШИНА
+                    </h3>
+
+                    <p>
+                        Не каждый момент требует действия.
+                        Иногда нужно просто слушать.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="story-card reveal">
+
+                <div class="story-card-number">
+                    04
+                </div>
+
+                <div class="story-card-arrow">
+                    ↗
+                </div>
+
+
+                <div class="story-card-content">
+
+                    <h3>
+                        РЕШЕНИЯ
+                    </h3>
+
+                    <p>
+                        Некоторые последствия невозможно
+                        отменить.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     NIGHT
+===================================================== -->
+
+<section
+    class="night cinematic-section"
+    id="night"
+>
+
+    <div
+        class="night-background-image"
+        style="
+            background-image:
+            linear-gradient(
+                90deg,
+                rgba(0,0,0,.88),
+                rgba(0,0,0,.25),
+                rgba(0,0,0,.88)
+            ),
+            url('images/night.jpg');
+            background-size: cover;
+            background-position: center;
+        "
+    ></div>
+
+
+    <div class="night-overlay"></div>
+
+
+    <div class="section-container">
+
+        <div class="night-content reveal">
+
+            <div class="section-index">
+                04 / НОЧЬ
+            </div>
+
+
+            <div class="night-title">
+
+                <span>
+                    ДНЁМ ТЫ ВЫЖИВАЕШЬ.
+                </span>
+
+                <strong>
+                    НОЧЬЮ
+                </strong>
+
+                <span>
+                    ТЫ ВСПОМИНАЕШЬ.
+                </span>
+
+            </div>
+
+
+            <p class="night-description">
+
+                Когда исчезает свет, меняется само
+                ощущение пространства.
+
+                <br><br>
+
+                Ночь — это не просто другое время суток.
+                Это отдельное состояние мира.
+
+            </p>
+
+
+            <div class="night-warning">
+
+                <span class="warning-icon">
+                    !
+                </span>
+
+                <span>
+                    ПОСЛЕ ЗАХОДА СОЛНЦА ПРАВИЛА МЕНЯЮТСЯ
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PHILOSOPHY
+===================================================== -->
+
+<section
+    class="philosophy section-dark"
+    id="philosophy"
+>
+
+    <div class="section-container">
+
+        <div class="section-header reveal">
+
+            <div class="section-index">
+                05 / ИДЕЯ
+            </div>
+
+        </div>
+
+
+        <div class="philosophy-main reveal">
+
+            <h2>
+                КЕМ ТЫ
+                <br>
+                ОСТАНЕШЬСЯ,
+                <br>
+                КОГДА
+                <span>
+                    ВСЁ
+                    <br>
+                    ЗАКОНЧИТСЯ?
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="philosophy-grid">
+
+
+            <div class="philosophy-block reveal">
+
+                <span>
+                    НАДЕЖДА
+                </span>
+
+                <p>
+                    Иногда именно надежда заставляет
+                    человека идти дальше.
+                </p>
+
+            </div>
+
+
+            <div class="philosophy-block reveal">
+
+                <span>
+                    ЦЕНА
+                </span>
+
+                <p>
+                    У каждого выбора есть последствия.
+                    Даже если ты не готов их принять.
+                </p>
+
+            </div>
+
+
+            <div class="philosophy-block reveal">
+
+                <span>
+                    ЧЕЛОВЕК
+                </span>
+
+                <p>
+                    Выжить можно физически.
+                    Но что останется внутри —
+                    решаешь только ты.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CHOICE
+===================================================== -->
+
+<section
+    class="choice cinematic-section"
+    id="choice"
+>
+
+    <div
+        class="choice-background"
+        style="
+            background-image:
+            linear-gradient(
+                90deg,
+                rgba(5,5,5,.94),
+                rgba(5,5,5,.48),
+                rgba(5,5,5,.9)
+            ),
+            url('images/choice.jpg');
+            background-size: cover;
+            background-position: center;
+        "
+    ></div>
+
+
+    <div class="section-container">
+
+        <div class="choice-content reveal">
+
+            <div class="section-index">
+                06 / ВЫБОР
+            </div>
+
+
+            <h2>
+                ИНОГДА
+                <br>
+                ВЫБОР
+                <br>
+                УЖЕ
+                <span>
+                    СДЕЛАН.
+                </span>
+            </h2>
+
+
+            <p>
+                EYL не обещает правильных решений.
+                Он предлагает жить с теми,
+                которые ты сделал.
+            </p>
+
+
+            <div class="choice-line"></div>
+
+            <span class="choice-caption">
+                НЕКОТОРЫЕ ДВЕРИ ОТКРЫВАЮТСЯ ТОЛЬКО ОДИН РАЗ
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEVELOPMENT
+===================================================== -->
+
+<section
+    class="development section-dark"
+    id="development"
+>
+
+    <div class="section-container">
+
+        <div class="development-header reveal">
+
+            <div class="section-index">
+                07 / СТАТУС
+            </div>
+
+
+            <h2>
+                ПРОЕКТ
+                <span>
+                    В РАЗРАБОТКЕ.
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="development-panel reveal">
+
+            <div class="development-top">
+
+                <span>
+                    EYL DEVELOPMENT STATUS
+                </span>
+
+                <strong>
+                    IN PROGRESS
+                </strong>
+
+            </div>
+
+
+            <div class="development-progress">
+
+                <div class="development-progress-line">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="development-progress-labels">
+
+                    <span>
+                        КОНЦЕПТ
+                    </span>
+
+                    <span>
+                        ПРОТОТИП
+                    </span>
+
+                    <span>
+                        VERTICAL SLICE
+                    </span>
+
+                    <span>
+                        RELEASE
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <p>
+                EYL находится в разработке.
+                Мир, механики и история постепенно
+                превращаются из идеи в игру.
+            </p>
+
+
+            <div class="development-meta">
+
+                <span>
+                    UNREAL ENGINE
+                </span>
+
+                <span>
+                    SURVIVAL HORROR
+                </span>
+
+                <span>
+                    SINGLE PLAYER
+                </span>
+
+                <span>
+                    DEVELOPMENT BUILD
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DEVELOPERS
+===================================================== -->
+
+<section
+    class="developers section-dark"
+    id="developers"
+>
+
+    <div class="section-container">
+
+        <div class="section-header reveal">
+
+            <div class="section-index">
+                08 / РАЗРАБОТЧИКИ
+            </div>
+
+        </div>
+
+
+        <div class="developers-heading reveal">
+
+            <h2>
+                НЕБОЛЬШАЯ
+                <br>
+                КОМАНДА.
+                <span>
+                    БОЛЬШАЯ
+                    <br>
+                    ИДЕЯ.
+                </span>
+            </h2>
+
+
+            <p>
+                EYL создаётся небольшой командой,
+                где каждый участник отвечает сразу
+                за несколько направлений проекта.
+            </p>
+
+        </div>
+
+
+        <div class="developers-grid">
+
+
+            <article class="developer-card reveal">
+
+                <div class="developer-number">
+                    01
+                </div>
+
+
+                <div class="developer-role">
+                    CREATIVE / GAME DESIGN
+                </div>
+
+
+                <h3>
+                    СЦЕНАРИЙ
+                </h3>
+
+
+                <p>
+                    История, концепция мира,
+                    атмосфера и решения,
+                    которые формируют EYL.
+                </p>
+
+            </article>
+
+
+            <article class="developer-card reveal">
+
+                <div class="developer-number">
+                    02
+                </div>
+
+
+                <div class="developer-role">
+                    MANAGEMENT
+                </div>
+
+
+                <h3>
+                    ПРОДАКШН
+                </h3>
+
+
+                <p>
+                    Планирование разработки,
+                    координация задач и движение
+                    проекта от идеи к игре.
+                </p>
+
+            </article>
+
+
+            <article class="developer-card reveal">
+
+                <div class="developer-number">
+                    03
+                </div>
+
+
+                <div class="developer-role">
+                    DEVELOPMENT
+                </div>
+
+
+                <h3>
+                    КОМАНДА
+                </h3>
+
+
+                <p>
+                    Программирование, окружение,
+                    технологии и всё то, что
+                    постепенно оживляет проект.
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="developers-footer">
+
+            <span>
+                EYL PROJECT / PRIVATE DEVELOPMENT
+            </span>
+
+            <span>
+                2026
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HIDDEN LORE / SIGNAL
+===================================================== -->
+
+<section
+    class="signal section-dark"
+    id="signal"
+>
+
+    <div class="section-container">
+
+        <div class="signal-header reveal">
+
+            <div class="section-index">
+                09 / СИГНАЛ
+            </div>
+
+
+            <h2>
+                ТЫ НЕ ДОЛЖЕН
+                <span>
+                    БЫЛ ЭТО УВИДЕТЬ.
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="signal-grid">
+
+
+            <div class="signal-fragment reveal">
+
+                <span>
+                    FRAGMENT 001
+                </span>
+
+                <p>
+                    Сигнал появился раньше,
+                    чем кто-либо понял,
+                    что он существует.
+                </p>
+
+            </div>
+
+
+            <div class="signal-fragment reveal">
+
+                <span>
+                    FRAGMENT 002
+                </span>
+
+                <p>
+                    Некоторые записи
+                    заканчиваются одинаково.
+                </p>
+
+            </div>
+
+
+            <div class="signal-fragment reveal">
+
+                <span>
+                    FRAGMENT 003
+                </span>
+
+                <p>
+                    Если система говорит
+                    «ждать» — иногда лучше
+                    действительно ждать.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section class="final-section">
+
+    <div
+        class="final-background"
+        style="
+            background-image:
+            linear-gradient(
+                rgba(0,0,0,.45),
+                rgba(0,0,0,.82)
+            ),
+            url('images/final.jpg');
+            background-size: cover;
+            background-position: center;
+        "
+    ></div>
+
+
+    <div class="final-overlay"></div>
+
+
+    <div class="final-content reveal">
+
+        <div class="final-small">
+            EYL / PROJECT
+        </div>
+
+
+        <h2>
+            ТЫ
+            <br>
+            ГОТОВ
+            <span>
+                ЖДАТЬ?
+            </span>
+        </h2>
+
+
+        <button
+            class="enter-button"
+            id="enterButton"
+        >
+
+            <span>
+                ВОЙТИ В МИР
+            </span>
+
+            <span>
+                →
+            </span>
+
+        </button>
+
+
+        <div class="final-status">
+
+            <span class="status-dot"></span>
+
+            <span>
+                СИГНАЛ ОЖИДАЕТ
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-logo">
+            EYL
+        </div>
+
+
+        <div class="footer-info">
+
+            <span>
+                SURVIVAL HORROR
+            </span>
+
+            <span>
+                DEVELOPMENT PROJECT
+            </span>
+
+            <span>
+                © 2026 EYL PROJECT
+            </span>
+
+        </div>
+
+
+        <div class="footer-status">
+
+            <span class="status-dot"></span>
+
+            <span>
+                СИГНАЛ СТАБИЛЕН
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     ENTER WORLD MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="modal"
+    aria-hidden="true"
+>
+
+    <div class="modal-backdrop"></div>
+
+
+    <div
+        class="modal-window"
+        role="dialog"
+        aria-modal="true"
+    >
+
+        <button
+            class="modal-close"
+            id="modalClose"
+            aria-label="Закрыть"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-top">
+
+            <span>
+                CONNECTION
+            </span>
+
+            <span>
+                EYL / 001
+            </span>
+
+        </div>
+
+
+        <div class="modal-content">
+
+            <div class="modal-index">
+                ВХОДЯЩИЙ СИГНАЛ
+            </div>
+
+
+            <h2>
+                МИР
+                <span>
+                    ЖДЁТ.
+                </span>
+            </h2>
+
+
+            <p>
+                Соединение установлено.
+                Дальнейшая информация пока недоступна.
+            </p>
+
+
+            <div
+                class="modal-status"
+                id="waitStatus"
+            >
+                СИГНАЛ ПРИНЯТ. ОЖИДАНИЕ.
+            </div>
+
+
+            <div class="modal-actions">
+
+
+                <button
+                    class="modal-action primary"
+                    id="waitButton"
+                >
+
+                    <span>
+                        ЖДАТЬ
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="modal-action secondary"
+                    id="stayButton"
+                    onclick="
+                        document
+                        .getElementById('modalClose')
+                        .click();
+                    "
+                >
+                    ОСТАТЬСЯ
+                </button>
+
+
+                <button
+                    class="modal-action ghost"
+                    id="backButton"
+                    onclick="
+                        document
+                        .getElementById('modalClose')
+                        .click();
+                    "
+                >
+                    НАЗАД
+                </button>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="modal-bottom">
+
+            <span>
+                CONNECTION SECURE
+            </span>
+
+            <span>
+                WAITING FOR RESPONSE
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SECRET MESSAGE
+===================================================== -->
+
+<div
+    class="secret-message"
+    aria-hidden="true"
+>
+
+    <div class="secret-inner">
+
+        <div class="secret-label">
+            UNAUTHORIZED FRAGMENT
+        </div>
+
+
+        <div class="secret-text">
+            Иногда система
+            тоже боится тишины.
+        </div>
+
+
+        <button id="secretClose">
+            ЗАКРЫТЬ
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
